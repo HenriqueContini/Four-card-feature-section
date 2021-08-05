@@ -1,0 +1,90 @@
+.advantages__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 40px 9%;
+}
+
+.advantage {
+    -webkit-box-shadow: 0px 15px 34px -10px var(--dark-blue); 
+    background: var(--light-gray);
+    border-radius: 5px;
+    box-shadow: 0px 15px 34px -10px var(--dark-blue);
+    margin-bottom: 30px;
+    max-width: 300px;
+    padding: 15px;
+}
+
+.advantage__supervisor {
+    border-top: 3px solid var(--cyan);
+}
+
+.advantage__team-builder {
+    border-top: 3px solid var(--red);
+}
+
+.advantage__karma {
+    border-top: 3px solid var(--orange);
+}
+
+.advantage__calculator {
+    border-top: 3px solid var(--blue);
+}
+
+.advantage__title {
+    color: var(--dark-blue);
+    font-size: 1.15em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.advantage__description {
+    color: var(--dark-blue);
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.advantage__image {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 15px 20px 0px;
+    width: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .advantages__container {
+        display: grid;
+        grid-template-columns: 1fr 340px 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 25px 25px;
+        justify-items: center;
+    }
+
+    .advantage {
+        margin-bottom: 0px;
+    }
+
+    .advantage__supervisor {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        justify-self: right;
+    }
+
+    .advantage__team-builder {
+        grid-column: 2/3;
+        justify-self: center;
+    }
+
+    .advantage__karma {
+        grid-column: 2/3;
+        justify-self: center;
+    }
+
+    .advantage__calculator {
+        grid-column: 3/4;
+        grid-row: 1/3;
+        justify-self: left;
+    }
+}

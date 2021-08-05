@@ -1,0 +1,34 @@
+.header__container {
+    background-color: var(--light-gray);
+    font-size: 25px;
+    padding-top: 3em;
+}
+
+.header__title {
+    color: var(--dark-blue);
+    font-size: 1em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.header__title__strong {
+    color: var(--dark-blue);
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.header__description {
+    color: var(--dark-blue);
+    font-size: 0.65em;
+    font-weight: 400;
+    padding: 20px 9%;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .header__description {
+        padding: 20px 15%;
+    }
+}
